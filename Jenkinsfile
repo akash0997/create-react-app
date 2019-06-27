@@ -1,10 +1,10 @@
 node {
     checkout scm 
     stage('Build') {
-        sh 'npm install'
+        'npm install'
     }    
     stage('Test') {
-        sh 'npm test'
+         'npm test'
        }
     stage('Deploy') {
         echo 'Deploying....'
