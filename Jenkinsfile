@@ -1,9 +1,14 @@
 node {
+    checkout scm 
     stage('Build') {
-        echo 'Building....'
-    }
+        steps {
+        sh 'npm install'
+        }
+    }    
     stage('Test') {
-        echo 'Testing....'
+        steps {
+        sh 'npm test'
+        }
     }
     stage('Deploy') {
         echo 'Deploying....'
