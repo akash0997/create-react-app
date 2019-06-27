@@ -1,7 +1,7 @@
 node {
     checkout scm 
     stage('Build') {
-        npm install
+        'npm install'
     }    
     stage('Test') {
          'npm test'
